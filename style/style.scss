@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+$color1: #333;
+$color2: rgb(200, 30, 30);
+$color3: #fff;
+
+header{
+    width: 100%;
+    padding: 10px;
+
+    background-color: $color1;
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    & #container-title{
+        padding: 5px;
+
+        & a{
+            color: $color2;
+            transition: .5s;
+        }
+
+        & a:hover{
+            text-shadow: 0 0 3px $color2, 0 0 5px $color2, 0 0 20px $color2;
+        }
+    }
+
+    & #container-search{
+        width: 100%;
+        min-width: 160px;
+        max-width: 350px;
+        height: 30px;
+        padding: 0;
+
+        background-color: $color3;
+        border-radius: 3px;
+
+        display: flex;
+        overflow: hidden;
+
+        & input{
+            width: 100%;
+            padding-left: 8px;
+
+            border: none;
+        }
+
+        & input:focus{
+            outline: none;
+            box-shadow: inset 2px 2px 0 $color3, inset -2px -2px 0 $color3, inset 3px 3px 0 $color2, inset -3px -3px 0 $color2;
+        }
+
+        & button{
+            min-width: 30px;
+            height: 30px;
+
+            background: none;
+            border: none;
+            
+            color: $color1;
+            font-size: 18px;
+
+            display: grid;
+            place-content: center;
+
+            cursor: pointer;
+
+            & ion-icon{
+                --ionicon-stroke-width: 54px;
+            }
+        }
+    }
+
+    & #container-nav-list{
+        display: flex;
+
+        & .container-nav-list-item-link{
+            padding: 5px 15px;
+
+            border-radius: 3px;
+
+            color: $color3;
+            text-align: center;
+            line-height: 25px;
+            font-size: 18px;
+
+            display: block;
+
+            transition: .3s;
+        }
+
+        & .container-nav-list-item-link:hover{
+            color: $color2;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    header{
+        justify-content: center;
+    }
+}

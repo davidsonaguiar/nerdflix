@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+header {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header #container-title {
+  padding: 5px;
+}
+
+header #container-title a {
+  color: #c81e1e;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header #container-title a:hover {
+  text-shadow: 0 0 3px #c81e1e, 0 0 5px #c81e1e, 0 0 20px #c81e1e;
+}
+
+header #container-search {
+  width: 100%;
+  min-width: 160px;
+  max-width: 350px;
+  height: 30px;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+header #container-search input {
+  width: 100%;
+  padding-left: 8px;
+  border: none;
+}
+
+header #container-search input:focus {
+  outline: none;
+  -webkit-box-shadow: inset 2px 2px 0 #fff, inset -2px -2px 0 #fff, inset 3px 3px 0 #c81e1e, inset -3px -3px 0 #c81e1e;
+          box-shadow: inset 2px 2px 0 #fff, inset -2px -2px 0 #fff, inset 3px 3px 0 #c81e1e, inset -3px -3px 0 #c81e1e;
+}
+
+header #container-search button {
+  min-width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 18px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+header #container-search button ion-icon {
+  --ionicon-stroke-width: 54px;
+}
+
+header #container-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header #container-nav-list .container-nav-list-item-link {
+  padding: 5px 15px;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+  font-size: 18px;
+  display: block;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header #container-nav-list .container-nav-list-item-link:hover {
+  color: #c81e1e;
+}
+
+@media (max-width: 520px) {
+  header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
