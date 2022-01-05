@@ -7,19 +7,21 @@
     font-family: sans-serif;
 }
 
+$color1: rgb(34, 34, 34);
+$color2: rgb(200, 30, 30);
+$color3: #fff;
+
 body{
     width: 100%;
-    background-color: #f5f5f5;
+    height: 100vh;
+    background-color: $color1;
+    background: radial-gradient(circle, rgb(200, 30, 30) 0%, rgb(34, 34, 34) 100%);
 }
 
 img{
     max-width: 100%;
     display: block;
 }
-
-$color1: #333;
-$color2: rgb(200, 30, 30);
-$color3: #fff;
 
 header{
     width: 100%;
@@ -69,7 +71,7 @@ header{
 
         & input:focus{
             outline: none;
-            box-shadow: inset 2px 2px 0 $color3, inset -2px -2px 0 $color3, inset 3px 3px 0 $color2, inset -3px -3px 0 $color2;
+            box-shadow: inset 2px 2px 0 $color3, inset -2px -2px 0 $color3, inset 3px 3px 0 $color1, inset -3px -3px 0 $color1;
         }
 
         & button{
