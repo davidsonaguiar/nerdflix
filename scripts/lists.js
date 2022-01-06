@@ -1,4 +1,4 @@
-let films = [
+let filmes = [
     {
         titulo: 'matrix',
         diretor: 'lana wachowski',
@@ -94,5 +94,62 @@ let films = [
         diretor: 'george lucas',
         studio: 'lucas films',
         ulr: './img/starwars.jpg'
+    }
+];
+
+let series = [
+    {
+        titulo: 'break bad',
+        diretor: 'vince gilligan',
+        studio: 'sony pictures television',
+        ulr: './img/breakbad.jpg'
+    },
+    {
+        titulo: 'dr. house',
+        diretor: 'david shore',
+        studio: 'universal television',
+        ulr: './img/drhouse.jpg'
+    },
+    {
+        titulo: 'house of cards',
+        diretor: 'david fincher',
+        studio: 'media rights capital',
+        ulr: './img/houseofcards.jpg'
+    },
+    {
+        titulo: 'pokemon',
+        diretor: 'satoshi tajiri',
+        studio: 'OLM',
+        ulr: './img/pokemon.jpg'
+    },
+    {
+        titulo: 'smallville',
+        diretor: 'david nutte',
+        studio: 'DC Comics ',
+        ulr: './img/smallville.jpg'
+    },
+    {
+        titulo: 'supernatural',
+        diretor: 'eric kripke',
+        studio: 'warner bros',
+        ulr: './img/supernatural.jpg'
+    },
+    {
+        titulo: 'the umbrella academy',
+        diretor: 'gerard way',
+        studio: 'universal cable productions',
+        ulr: './img/theumbrellaacademy.jpg'
+    },
+    {
+        titulo: 'the witcher',
+        diretor: 'tomasz bagiński',
+        studio: 'sean daniel company',
+        ulr: './img/thewitcher.jpg'
+    },
+    {
+        titulo: 'vikings',
+        diretor: 'michael hirst',
+        studio: 'shaw media',
+        ulr: './img/vikings.jpg'
     }
 ];

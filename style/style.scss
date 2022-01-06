@@ -9,13 +9,15 @@
 
 $color1: rgb(34, 34, 34);
 $color2: rgb(200, 30, 30);
-$color3: #fff;
+$color3: rgb(255, 255, 255);
+$color4: rgba(255, 255, 255, .1);
 
 body{
     width: 100%;
     height: 100vh;
+
     background-color: $color1;
-    background: radial-gradient(circle, rgb(200, 30, 30) 0%, rgb(34, 34, 34) 100%);
+    background: radial-gradient( rgba(255, 255, 255, 0), rgba(36, 36, 36, 0.931)), url("/imgs/bg.jpg") no-repeat center / cover fixed;
 }
 
 img{
@@ -23,24 +25,33 @@ img{
     display: block;
 }
 
-header{
+header,
+main,
+footer{
     width: 100%;
+    max-width: 1000px;
     padding: 10px;
+    margin: 0 auto;
+}
 
-    background-color: $color1;
+header{
+    border-bottom: 2px solid $color4;
     
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
 
-    & #container-title{
+    & #container-nerdflix{
         padding: 5px;
 
         & a{
+            font-size: 30px;
+            font-weight: 600;
             color: $color2;
+            text-shadow: 1px 1px 0 #333;
+            
             transition: .5s;
         }
 
@@ -56,7 +67,7 @@ header{
         height: 30px;
         padding: 0;
 
-        background-color: $color3;
+        background-color: $color4;
         border-radius: 3px;
 
         display: flex;
@@ -66,12 +77,17 @@ header{
             width: 100%;
             padding-left: 8px;
 
+            background: none;
             border: none;
         }
 
         & input:focus{
             outline: none;
-            box-shadow: inset 2px 2px 0 $color3, inset -2px -2px 0 $color3, inset 3px 3px 0 $color1, inset -3px -3px 0 $color1;
+            background-color: $color3;
+        }
+
+        & input:focus ~ button{
+            background-color: $color3;
         }
 
         & button{
@@ -95,32 +111,104 @@ header{
         }
     }
 
-    & #container-nav-list{
-        display: flex;
-
-        & .container-nav-list-item-link{
-            padding: 5px 15px;
-
-            border-radius: 3px;
-
-            color: $color3;
-            text-align: center;
-            line-height: 25px;
-            font-size: 18px;
-
-            display: block;
-
-            transition: .3s;
-        }
-
-        & .container-nav-list-item-link:hover{
-            color: $color2;
-        }
+    #container-search:hover{
+        background-color: $color3;
     }
 }
 
 @media (max-width: 520px) {
     header{
         justify-content: center;
+    }
+}
+
+main{
+    width: 100%;
+    min-width: 320px;
+    max-width: 1000px;
+    padding: 10px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #main-top-page{
+        margin: 60px;
+        width: 100%;
+
+        background: radial-gradient( rgba(34, 34, 34, .3), transparent 65%);
+        backdrop-filter: blur(6px);
+        border-radius: 50%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            padding: 20px;
+
+            color: $color2;
+            font-size: 72px;
+            font-weight: 600;
+            text-shadow: 3px 3px 0px #333;
+
+            transition: .3s;
+        }
+
+        h1:hover{
+            text-shadow: 0 0 2px $color3, 
+            0 0 5px $color2, 
+            0 0 10px $color2, 
+            0 0 20px $color2, 
+            0 0 60px $color2;
+        }
+
+        #main-box-imgs{
+            width: 100%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            .main-top-box-imgs{
+                position: relative;
+                width: 100%;
+                min-width: 140px;
+                max-width: 200px;
+
+                display: inline-block;
+
+                z-index: 0;
+                transition: .2s linear;
+            }
+
+            .main-top-box-imgs:hover{
+                margin: 0 10px;
+
+                transform: scale(115%);
+                z-index: 1;
+            }
+
+            .main-top-box-p{
+                position: absolute;
+                bottom: 0;
+
+                width: 100%;
+                height: 30px;
+                padding-left: 10px;
+
+                color: $color3;
+                font-size: 18px;
+                line-height: 30px;
+
+                background-color: $color1 / 30;
+
+                display: block;
+            }
+        } 
     }
 }
