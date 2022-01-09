@@ -119,7 +119,7 @@ let series = [
     {
         titulo: 'smallville',
         diretor: 'david nutte',
-        studio: 'DC Comics ',
+        studio: 'DC Comics',
         url: './img/smallville.jpg'
     },
     {
