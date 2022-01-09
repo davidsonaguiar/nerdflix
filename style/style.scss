@@ -1,3 +1,5 @@
+//resets
+
 *{
     margin: 0;
     padding: 0;
@@ -7,24 +9,32 @@
     font-family: sans-serif;
 }
 
+//variaveis
+
 $color1: rgb(34, 34, 34);
 $color2: rgb(200, 30, 30);
 $color3: rgb(255, 255, 255);
 $color4: rgba(255, 255, 255, .1);
 
+
+// conf do body
+
 body{
     width: 100%;
-    height: 100vh;
 
     background-color: $color1;
-    background: radial-gradient( rgba(255, 255, 255, 0), rgba(36, 36, 36, 0.931)), url("/imgs/bg.jpg") no-repeat center / cover fixed;
+    background: radial-gradient( rgba(255, 255, 255, 0), rgba(36, 36, 36, 0.931)), url("/img/bg.jpg") no-repeat center / cover fixed;
+
+    scroll-behavior: smooth;
 }
 
+// conf do img para ficar responsiva no container
 img{
     max-width: 100%;
     display: block;
 }
 
+//padroes de tamanhos para header, main e footer
 header,
 main,
 footer{
@@ -34,6 +44,8 @@ footer{
     margin: 0 auto;
 }
 
+
+// inicio da estilização do header
 header{
     border-bottom: 2px solid $color4;
     
@@ -43,6 +55,7 @@ header{
     gap: 10px;
     flex-wrap: wrap;
 
+    // inicio da estilização do container header (titulo)
     & #container-nerdflix{
         padding: 5px;
 
@@ -54,12 +67,14 @@ header{
             
             transition: .5s;
         }
-
+        
+        // add hover no titulo
         & a:hover{
             text-shadow: 0 0 3px $color2, 0 0 5px $color2, 0 0 20px $color2;
         }
     }
 
+    // inicio da estilização do container input search
     & #container-search{
         width: 100%;
         min-width: 160px;
@@ -67,12 +82,14 @@ header{
         height: 30px;
         padding: 0;
 
-        background-color: $color4;
+        background-color: $color3;
         border-radius: 3px;
 
         display: flex;
         overflow: hidden;
 
+
+        //input search
         & input{
             width: 100%;
             padding-left: 8px;
@@ -81,15 +98,13 @@ header{
             border: none;
         }
 
+        //input search removendo out line Focus
         & input:focus{
             outline: none;
-            background-color: $color3;
         }
 
-        & input:focus ~ button{
-            background-color: $color3;
-        }
 
+        //button pesquisar
         & button{
             min-width: 30px;
             height: 30px;
@@ -105,23 +120,30 @@ header{
 
             cursor: pointer;
 
+
+            //estiliazndo icone button pesquisar
             & ion-icon{
                 --ionicon-stroke-width: 54px;
             }
         }
     }
 
+    // add hover no container do input search
     #container-search:hover{
         background-color: $color3;
     }
 }
 
+
+// Media query do Heade menor 520px
 @media (max-width: 520px) {
     header{
         justify-content: center;
     }
 }
 
+
+// inicio da estilização do main
 main{
     width: 100%;
     min-width: 320px;
@@ -134,21 +156,20 @@ main{
     flex-direction: column;
     align-items: center;
 
+    // inicio da estilização do nav das categorias
     #main-top-page{
-        margin: 60px;
+        margin: 20px;
         width: 100%;
-
-        background: radial-gradient( rgba(34, 34, 34, .3), transparent 65%);
-        backdrop-filter: blur(6px);
-        border-radius: 50%;
+        padding: 20px 0 0;
 
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
+        // Estilização o titulo principal
         h1{
-            padding: 20px;
+            padding-bottom: 25px;
 
             color: $color2;
             font-size: 72px;
@@ -158,6 +179,8 @@ main{
             transition: .3s;
         }
 
+
+        // add hover ao titulo principal
         h1:hover{
             text-shadow: 0 0 2px $color3, 
             0 0 5px $color2, 
@@ -166,26 +189,42 @@ main{
             0 0 60px $color2;
         }
 
+        // Estilização o container das imagens da nav categorias
         #main-box-imgs{
             width: 100%;
+
+            padding: 45px 0;
             
+            background-color: rgba(0,0,0,.2);
+            border-radius: 15px;
+            backdrop-filter: blur(4px);
+
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             gap: 10px;
 
+
+            // Estilização das imagens
             .main-top-box-imgs{
                 position: relative;
                 width: 100%;
                 min-width: 140px;
                 max-width: 200px;
 
+                border-radius: 10px;
+
                 display: inline-block;
 
                 z-index: 0;
                 transition: .2s linear;
+
+                overflow: hidden;
             }
 
+
+            // add hover as imagens
             .main-top-box-imgs:hover{
                 margin: 0 10px;
 
@@ -210,5 +249,71 @@ main{
                 display: block;
             }
         } 
+    }
+
+    .main-lists-box{
+        width: 100%;
+        padding: 15px;
+        margin: 30px 0;
+
+        
+        background-color: rgba(0,0,0,.2);
+        border-radius: 15px;
+        backdrop-filter: blur(4px);
+
+        .main-sub-title{
+            padding: 10px 0 20px;
+
+            color: $color2;
+            font-size: 35px;
+            text-shadow: -2px 2px 0 #333;;
+        }
+
+        .main-list{
+            display: flex;
+            gap: 10px;
+
+            border-radius: 10px;    
+
+            overflow: auto;
+            scrollbar-width: none;
+            scroll-behavior: smooth;
+
+            .main-list-item{
+                position: relative;
+                width: 100%;
+                min-width: 290px;
+
+                border-radius: 10px;
+
+                overflow: hidden;
+
+                .main-list-item-link-p{
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    padding: 10px;
+
+                    background-color: $color1/30;
+
+                    color: $color3;
+                    font-size: 18px;
+
+                    display: block;
+                }
+
+                img{
+                    transition: .3s;
+                }
+            }
+
+            .main-list-item:hover img{
+                transform: scale(120%);
+            }
+        }
+
+        .main-list::-webkit-scrollbar{
+            appearance: none;
+        }
     }
 }

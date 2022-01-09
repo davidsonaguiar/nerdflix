@@ -10,9 +10,9 @@
 
 body {
   width: 100%;
-  height: 100vh;
   background-color: #222222;
-  background: radial-gradient(rgba(255, 255, 255, 0), rgba(36, 36, 36, 0.931)), url("/imgs/bg.jpg") no-repeat center/cover fixed;
+  background: radial-gradient(rgba(255, 255, 255, 0), rgba(36, 36, 36, 0.931)), url("/img/bg.jpg") no-repeat center/cover fixed;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -68,7 +68,7 @@ header #container-search {
   max-width: 350px;
   height: 30px;
   padding: 0;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: white;
   border-radius: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,11 +85,6 @@ header #container-search input {
 
 header #container-search input:focus {
   outline: none;
-  background-color: white;
-}
-
-header #container-search input:focus ~ button {
-  background-color: white;
 }
 
 header #container-search button {
@@ -140,12 +135,9 @@ main {
 }
 
 main #main-top-page {
-  margin: 60px;
+  margin: 20px;
   width: 100%;
-  background: radial-gradient(rgba(34, 34, 34, 0.3), transparent 65%);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
-  border-radius: 50%;
+  padding: 20px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,7 +154,7 @@ main #main-top-page {
 }
 
 main #main-top-page h1 {
-  padding: 20px;
+  padding-bottom: 25px;
   color: #c81e1e;
   font-size: 72px;
   font-weight: 600;
@@ -177,9 +169,16 @@ main #main-top-page h1:hover {
 
 main #main-top-page #main-box-imgs {
   width: 100%;
+  padding: 45px 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -194,10 +193,12 @@ main #main-top-page #main-box-imgs .main-top-box-imgs {
   width: 100%;
   min-width: 140px;
   max-width: 200px;
+  border-radius: 10px;
   display: inline-block;
   z-index: 0;
   -webkit-transition: .2s linear;
   transition: .2s linear;
+  overflow: hidden;
 }
 
 main #main-top-page #main-box-imgs .main-top-box-imgs:hover {
@@ -218,5 +219,67 @@ main #main-top-page #main-box-imgs .main-top-box-p {
   line-height: 30px;
   background-color: #010101;
   display: block;
+}
+
+main .main-lists-box {
+  width: 100%;
+  padding: 15px;
+  margin: 30px 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+main .main-lists-box .main-sub-title {
+  padding: 10px 0 20px;
+  color: #c81e1e;
+  font-size: 35px;
+  text-shadow: -2px 2px 0 #333;
+}
+
+main .main-lists-box .main-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+  overflow: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+main .main-lists-box .main-list .main-list-item {
+  position: relative;
+  width: 100%;
+  min-width: 290px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+main .main-lists-box .main-list .main-list-item .main-list-item-link-p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #010101;
+  color: white;
+  font-size: 18px;
+  display: block;
+}
+
+main .main-lists-box .main-list .main-list-item img {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main .main-lists-box .main-list .main-list-item:hover img {
+  -webkit-transform: scale(120%);
+          transform: scale(120%);
+}
+
+main .main-lists-box .main-list::-webkit-scrollbar {
+  -webkit-appearance: none;
+          appearance: none;
 }
 /*# sourceMappingURL=style.css.map */
