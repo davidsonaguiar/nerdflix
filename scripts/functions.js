@@ -119,8 +119,6 @@ function back(btn){
     }
 
     divPrin.getElementsByClassName('main-list')[0].scroll(index - 100, 0);   
-
-    console.log(widthList, scrollWidthList, index)
 }
 
 function next(btn){
@@ -135,8 +133,6 @@ function next(btn){
     }
 
     divPrin.getElementsByClassName('main-list')[0].scroll(index - 100, 0);   
-
-    console.log(widthList, scrollWidthList, index)
 }
 
 const functions = {
