@@ -29,7 +29,7 @@ body{
     width: 100%;
 
     background-color: $color1;
-    background: radial-gradient( rgba(255, 255, 255, 0), rgba(36, 36, 36, 0.931)), url("/img/bg.jpg") no-repeat center / cover fixed;
+    background: radial-gradient( rgba(255, 255, 255, 0), rgba(36, 36, 36, 0.931)), url("./img/bg.jpg") no-repeat center / cover fixed;
 
     scroll-behavior: smooth;
 }
