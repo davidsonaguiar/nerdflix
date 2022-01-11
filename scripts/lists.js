@@ -145,10 +145,202 @@ let series = [
         diretor: 'michael hirst',
         studio: 'shaw media',
         url: './img/vikings.jpg'
+    },
+    {
+        titulo: 'break bad',
+        diretor: 'vince gilligan',
+        studio: 'sony pictures television',
+        url: './img/breakbad.jpg'
+    },
+    {
+        titulo: 'dr. house',
+        diretor: 'david shore',
+        studio: 'universal television',
+        url: './img/drhouse.jpg'
+    },
+    {
+        titulo: 'house of cards',
+        diretor: 'david fincher',
+        studio: 'media rights capital',
+        url: './img/houseofcards.jpg'
+    },
+    {
+        titulo: 'smallville',
+        diretor: 'david nutte',
+        studio: 'DC Comics',
+        url: './img/smallville.jpg'
+    },
+    {
+        titulo: 'supernatural',
+        diretor: 'eric kripke',
+        studio: 'warner bros',
+        url: './img/supernatural.jpg'
+    },
+    {
+        titulo: 'the umbrella academy',
+        diretor: 'gerard way',
+        studio: 'universal cable productions',
+        url: './img/theumbrellaacademy.jpg'
+    },
+    {
+        titulo: 'the witcher',
+        diretor: 'tomasz bagiński',
+        studio: 'sean daniel company',
+        url: './img/thewitcher.jpg'
+    },
+    {
+        titulo: 'vikings',
+        diretor: 'michael hirst',
+        studio: 'shaw media',
+        url: './img/vikings.jpg'
+    },
+    {
+        titulo: 'break bad',
+        diretor: 'vince gilligan',
+        studio: 'sony pictures television',
+        url: './img/breakbad.jpg'
+    },
+    {
+        titulo: 'dr. house',
+        diretor: 'david shore',
+        studio: 'universal television',
+        url: './img/drhouse.jpg'
+    },
+    {
+        titulo: 'house of cards',
+        diretor: 'david fincher',
+        studio: 'media rights capital',
+        url: './img/houseofcards.jpg'
+    },
+    {
+        titulo: 'smallville',
+        diretor: 'david nutte',
+        studio: 'DC Comics',
+        url: './img/smallville.jpg'
+    },
+    {
+        titulo: 'supernatural',
+        diretor: 'eric kripke',
+        studio: 'warner bros',
+        url: './img/supernatural.jpg'
+    },
+    {
+        titulo: 'the umbrella academy',
+        diretor: 'gerard way',
+        studio: 'universal cable productions',
+        url: './img/theumbrellaacademy.jpg'
+    },
+    {
+        titulo: 'the witcher',
+        diretor: 'tomasz bagiński',
+        studio: 'sean daniel company',
+        url: './img/thewitcher.jpg'
+    },
+    {
+        titulo: 'vikings',
+        diretor: 'michael hirst',
+        studio: 'shaw media',
+        url: './img/vikings.jpg'
     }
 ];
 
 let documentarios = [
+    {
+        titulo: 'cena do crime',
+        diretor: 'joe berlinger',
+        studio: 'netflix',
+        url: './img/cenadocrime.jpg'
+    },
+    {
+        titulo: 'dogs',
+        diretor: 'allison berg',
+        studio: 'netflix',
+        url: './img/dogs.jpg'
+    },
+    {
+        titulo: 'industria americana',
+        diretor: 'steven bognar',
+        studio: 'netflix',
+        url: './img/industriaamericana.jpg'
+    },
+    {
+        titulo: 'lendas da marvel',
+        diretor: 'brando',
+        studio: 'marvel',
+        url: './img/lendasdamarvel.jpg'
+    },
+    {
+        titulo: 'mayday',
+        diretor: 'karen cinorre',
+        studio: 'los angeles',
+        url: './img/mayday.jpg'
+    },
+    {
+        titulo: 'nosso planeta',
+        diretor: 'cinorre karen',
+        studio: 'los angeles',
+        url: './img/nossoplaneta.jpg'
+    },
+    {
+        titulo: 'nova',
+        diretor: 'cinorre karen',
+        studio: 'los angeles',
+        url: './img/nova.jpg'
+    },
+    {
+        titulo: 'UFO',
+        diretor: 'brando',
+        studio: 'netflix',
+        url: './img/ufo.jpg'
+    },
+    {
+        titulo: 'cena do crime',
+        diretor: 'joe berlinger',
+        studio: 'netflix',
+        url: './img/cenadocrime.jpg'
+    },
+    {
+        titulo: 'dogs',
+        diretor: 'allison berg',
+        studio: 'netflix',
+        url: './img/dogs.jpg'
+    },
+    {
+        titulo: 'industria americana',
+        diretor: 'steven bognar',
+        studio: 'netflix',
+        url: './img/industriaamericana.jpg'
+    },
+    {
+        titulo: 'lendas da marvel',
+        diretor: 'brando',
+        studio: 'marvel',
+        url: './img/lendasdamarvel.jpg'
+    },
+    {
+        titulo: 'mayday',
+        diretor: 'karen cinorre',
+        studio: 'los angeles',
+        url: './img/mayday.jpg'
+    },
+    {
+        titulo: 'nosso planeta',
+        diretor: 'cinorre karen',
+        studio: 'los angeles',
+        url: './img/nossoplaneta.jpg'
+    },
+    {
+        titulo: 'nova',
+        diretor: 'cinorre karen',
+        studio: 'los angeles',
+        url: './img/nova.jpg'
+    },
+    {
+        titulo: 'UFO',
+        diretor: 'brando',
+        studio: 'netflix',
+        url: './img/ufo.jpg'
+    },
     {
         titulo: 'cena do crime',
         diretor: 'joe berlinger',
@@ -319,7 +511,151 @@ let desenhos = [
         diretor: 'satoshi tajiri',
         studio: 'OLM',
         url: './img/setepecados.jpg'
-    } 
+    },
+    {
+        titulo: 'acane',
+        diretor: 'satoshi tajiri',
+        studio: 'riot',
+        url: './img/arcane.jpg'
+    },
+    {
+        titulo: 'demon slayer',
+        diretor: 'satoshi tajiri',
+        studio: 'OLM',
+        url: './img/demonslayer.jpg'
+    },
+    {
+        titulo: 'pokemon',
+        diretor: 'satoshi tajiri',
+        studio: 'OLM',
+        url: './img/pokemon.jpg'
+    },
+    {
+        titulo: 'sete pecados capitais',
+        diretor: 'satoshi tajiri',
+        studio: 'OLM',
+        url: './img/setepecados.jpg'
+    },
+    {
+        titulo: 'acane',
+        diretor: 'satoshi tajiri',
+        studio: 'riot',
+        url: './img/arcane.jpg'
+    },
+    {
+        titulo: 'demon slayer',
+        diretor: 'satoshi tajiri',
+        studio: 'OLM',
+        url: './img/demonslayer.jpg'
+    },
+    {
+        titulo: 'pokemon',
+        diretor: 'satoshi tajiri',
+        studio: 'OLM',
+        url: './img/pokemon.jpg'
+    },
+    {
+        titulo: 'sete pecados capitais',
+        diretor: 'satoshi tajiri',
+        studio: 'OLM',
+        url: './img/setepecados.jpg'
+    },  
+    {
+        titulo: 'acane',
+        diretor: 'satoshi tajiri',
+        studio: 'riot',
+        url: './img/arcane.jpg'
+    },
+    {
+        titulo: 'demon slayer',
+        diretor: 'satoshi tajiri',
+        studio: 'OLM',
+        url: './img/demonslayer.jpg'
+    },
+    {
+        titulo: 'pokemon',
+        diretor: 'satoshi tajiri',
+        studio: 'OLM',
+        url: './img/pokemon.jpg'
+    },
+    {
+        titulo: 'sete pecados capitais',
+        diretor: 'satoshi tajiri',
+        studio: 'OLM',
+        url: './img/setepecados.jpg'
+    },
+    {
+        titulo: 'acane',
+        diretor: 'satoshi tajiri',
+        studio: 'riot',
+        url: './img/arcane.jpg'
+    },
+    {
+        titulo: 'demon slayer',
+        diretor: 'satoshi tajiri',
+        studio: 'OLM',
+        url: './img/demonslayer.jpg'
+    },
+    {
+        titulo: 'pokemon',
+        diretor: 'satoshi tajiri',
+        studio: 'OLM',
+        url: './img/pokemon.jpg'
+    },
+    {
+        titulo: 'sete pecados capitais',
+        diretor: 'satoshi tajiri',
+        studio: 'OLM',
+        url: './img/setepecados.jpg'
+    },
+    {
+        titulo: 'acane',
+        diretor: 'satoshi tajiri',
+        studio: 'riot',
+        url: './img/arcane.jpg'
+    },
+    {
+        titulo: 'demon slayer',
+        diretor: 'satoshi tajiri',
+        studio: 'OLM',
+        url: './img/demonslayer.jpg'
+    },
+    {
+        titulo: 'pokemon',
+        diretor: 'satoshi tajiri',
+        studio: 'OLM',
+        url: './img/pokemon.jpg'
+    },
+    {
+        titulo: 'sete pecados capitais',
+        diretor: 'satoshi tajiri',
+        studio: 'OLM',
+        url: './img/setepecados.jpg'
+    },  
+    {
+        titulo: 'acane',
+        diretor: 'satoshi tajiri',
+        studio: 'riot',
+        url: './img/arcane.jpg'
+    },
+    {
+        titulo: 'demon slayer',
+        diretor: 'satoshi tajiri',
+        studio: 'OLM',
+        url: './img/demonslayer.jpg'
+    },
+    {
+        titulo: 'pokemon',
+        diretor: 'satoshi tajiri',
+        studio: 'OLM',
+        url: './img/pokemon.jpg'
+    },
+    {
+        titulo: 'sete pecados capitais',
+        diretor: 'satoshi tajiri',
+        studio: 'OLM',
+        url: './img/setepecados.jpg'
+    }  
 ];
 
 
